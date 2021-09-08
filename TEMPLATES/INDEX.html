@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+<title>lönd</title>
+
+
+{% block content %}
+
+
+<main>
+        <section class = "banners">
+
+            <div class ="land"><h1>countries in alphabetical order :></h1>
+            </div>
+            
+                {% for x in listi %}
+                    <li>
+                        <a href="country/{{ x ['alpha2Code']}}">{{ x ['name']}}</a>
+                    </li>
+                {% endfor %}
+
+            </div>
+        </section>
+</main>
+
+{% endblock %}
