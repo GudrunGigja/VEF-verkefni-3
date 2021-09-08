@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+<title>frettir</title>
+
+{% block content %}
+
+<div class="page-header">
+  <link rel="stylesheet" href="/static/stylesheets/styles.css">
+</div>
+
+<main>
+        <section class = "land">
+          <img src="{{ land ['flag'] }}" alt="mynd">
+          <p>name: {{ land ['name'] }}
+          <br>population: {{ land ['population'] }}
+          <br>region: {{ land ['region'] }}
+          <br>timezone: {{ land ['timezones'] }}
+          
+          <br>capital: {{ land ['capital'] }}</p>
+        </section>
+    
+</main>
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
