@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+<title>frettir</title>
+
+{% block content %}
+
+<div class="page-header">
+  <link rel="stylesheet" href="/static/stylesheets/styles.css">
+</div>
+
+<main>
+    {% for x in heimsalfur %}
+    <li>
+        <a href="/country/{{ x ['alpha2Code']}}">{{ x ['name']}}</a>
+    </li>
+{% endfor %}  
+<p>{{ counter }} lönd/land í þessari heimsálfu</p>  
+</main>
+
+{% endblock %}
+
+{% block scripts %}
+
+{% endblock %}
